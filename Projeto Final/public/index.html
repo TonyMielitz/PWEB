@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contabilidade Ágil - Entrar</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <div class="brand">Contabilidade Ágil</div>
+      <p class="subtitle">Controle suas receitas e despesas de forma simples.</p>
+
+      <div class="tabs">
+        <button type="button" id="tab-login" class="active">Entrar</button>
+        <button type="button" id="tab-register">Criar conta</button>
+      </div>
+
+      <form id="form-login">
+        <div class="field">
+          <label for="login-email">E-mail</label>
+          <input type="email" id="login-email" required autocomplete="email" />
+        </div>
+        <div class="field">
+          <label for="login-password">Senha</label>
+          <input type="password" id="login-password" required autocomplete="current-password" />
+        </div>
+        <button type="submit">Entrar</button>
+      </form>
+
+      <form id="form-register" class="hidden">
+        <div class="field">
+          <label for="reg-name">Nome</label>
+          <input type="text" id="reg-name" required autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="reg-email">E-mail</label>
+          <input type="email" id="reg-email" required autocomplete="email" />
+        </div>
+        <div class="field">
+          <label for="reg-password">Senha</label>
+          <input type="password" id="reg-password" required minlength="6" autocomplete="new-password" />
+        </div>
+        <button type="submit">Criar conta</button>
+      </form>
+
+      <div id="msg" class="msg"></div>
+    </div>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
